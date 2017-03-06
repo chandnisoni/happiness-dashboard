@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1>Internet Happiness Dashboard</h1>
+    <table>
+      <tr>
+        <th>name</th>
+        <th>count</th>
+      </tr>
+    <% rows.forEach(function(row){ %>
+      <tr><td><%= row.name %></td><td><%= row.count %></td></tr>
+    <% }); %>
+    </table>
+  </div>
+</div>
+</body>
+</html>
