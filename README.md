@@ -5,12 +5,15 @@
 Happiness Dashboard for the Internet.
 
 ### How it works ?
+
 _Background job_
+
 1. Runs every minute using `node-schedule` to periodically query twitter (using `twitter` js client) for images related to being "happy".
 2. For all the images that it gets from step 1, it queries Clarifai (using `clarifai` js client) to understand the concepts that the "happy" images contains.
 3. Finally, it updates each concept's counter inside the DB.
 
 _Dashboard_
+
 * Displays the counter of top 25 things that Internet is happy about.
 
 ### Highlights
